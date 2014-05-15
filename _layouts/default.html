@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }} || Nishant Dania</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+        <!-- <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'> -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+
+        <!-- 404 error -->
+        {% if page.url == "/404.html" %}
+        <meta http-equiv="refresh" content="5; url=/">
+        {% endif %}
+    
+        <!-- Google Analytics -->
+        {% include google_analytics.html %}
+    </head>
+    <body>
+
+        <div class="site">
+            <header class="clearfix">
+
+                <div class="header-left clearfix">
+                    <div class="header-intro">
+                        <span>{{site.name}}</span><br>Coder / Designer / Arduino Enthusiast
+                    </div>
+                <div class='header-nav clearfix'>
+                    {% for page in site.pages_list %}
+                        <a href="{{ page[1] }}">{{ page[0] }}</a>
+                    {% endfor %}
+                </div>
+                </header>
+          
+
+            {{ content }}
+
+            {% include comments.html %}
+
+          <div class="footer">
+            <div class="copyright"><h4>&copy Copyright 2014 Nishant Dania &nbsp| &nbsp Powered by Jekyll and Disqus</h4></div>
+          </div>
+        </div>
+
+    </body>
+</html>
+
+
