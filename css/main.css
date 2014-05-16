@@ -54,11 +54,13 @@ a{
   border: none;
 }
 
+
 .posts span {
   color: #aaa;
   font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
 }
+
 
 .post-name a{
   text-decoration: none;
@@ -239,6 +241,12 @@ header span{
   margin-left: 1em;
   margin-right: 1em;
   line-height: 1.75em;
+}
+
+.post .block span{
+  color: #ea4361;
+  font-size: 0.8em;
+  font-style: italic;
 }
 
 .post span {
