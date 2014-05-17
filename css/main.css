@@ -292,6 +292,15 @@ header span{
   max-width: 400px;
   height: auto;
 }
+
+.big img{
+  max-width: 100%;
+  float: left;
+  margin: 3px;
+  height: auto;
+}
+
+
 /*****************************************************************************/
 /*
 /* Archives
