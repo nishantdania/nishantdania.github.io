@@ -9,7 +9,7 @@ categories: gsoc update
 </div><span>A Panda3d window and a PyQt window running simultaneously. The Open Files Dialog was created from a File menu in PyQt interface.</span></div>
 
 This is a long post and is intended for those who are facing problems in interfacing Panda3d and PyQt4. Hope this post clears some doubts.<br><br>
-I wanted to make a GUI in PyQt4 for my 3d-auv-simulator(this is what I named my GSOC project). So I started with the basic code found at the [zetcode site][Zetcode]. Alone, PyQt ran very smoothly. But as soon as I added Panda3d's <code>run()</code> method in my code, everything seemed to go haywire. The PyQt window started crashing and the Panda3D window started hanging.<br><br>
+I wanted to make a GUI in PyQt4 for my 3d-auv-simulator(this is what I named my GSOC project). So I started with the basic code found at the <a target="_blanck" href="http://zetcode.com/gui/pyqt4/">zetcode</a> site. Alone, PyQt ran very smoothly. But as soon as I added Panda3d's <code>run()</code> method in my code, everything seemed to go haywire. The PyQt window started crashing and the Panda3D window started hanging.<br><br>
 What I realised late from all this was the fact that Panda3d's <code>run()</code> method has its own event loop. In fact, it is the main loop running behind Panda3d. PyQt also has its own event loop. This was the reason why my code was crashing initially since a single program can have only one event loop.<br><br>
 <div class="block">
 To deal with this situation, any one of the following solutions can be used:<br>
@@ -17,7 +17,6 @@ To deal with this situation, any one of the following solutions can be used:<br>
 2. Use multithreading to separate the two event loops. (This is what I chose to do)<br>
 3. Use Tasks in Panda3d as an alternative to multithreading. (I haven't explored this yet)<br>
 </div>
-
 Panda3d is built in C++. So its site says that its better to use this: <br>
 
 {% highlight python %}
@@ -163,7 +162,3 @@ Using the code above, I am able to separately operate both the event loops. I'll
 Communication between Panda3d and the Qt interface. This is needed to control the scene in Panda3d using the GUI.<br>
 
 I have set up a Google Code page for this 3d-auv-simulator. I'll update the Wiki of the project with the details of all the code and would post the link here on my blog soon.
-
-
-[Zetcode]: http://zetcode.com/gui/pyqt4/
-
