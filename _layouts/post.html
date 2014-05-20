@@ -5,6 +5,6 @@ comments: True
 
 <div class="post">
 	<div class="post-name"><a href="{{ page.url }}">{{ page.title }}</a></div>
-	<li><span>{{ page.date | date_to_string }}</span></li>
+	<li><div class="date">{{ page.date | date_to_string }}</div></li>
 	{{ content }}
 </div>

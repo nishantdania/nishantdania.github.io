@@ -36,6 +36,16 @@ a{
 /* Home
 /*
 /*****************************************************************************/
+.date{
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
+
+.highlight .bp{
+  color: #0086B3;
+}
+
 .posts {
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   list-style-type: none;
@@ -44,6 +54,8 @@ a{
   margin-right: 1em;
   line-height: 1.75em;
 }
+
+
 
 .posts li{
   margin-bottom: 2em;
@@ -56,11 +68,8 @@ a{
 
 
 .posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
-}
 
+}
 
 .post-name a{
   text-decoration: none;
@@ -249,9 +258,7 @@ header span{
 }
 
 .post span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
+
 }
 
 .post pre {
