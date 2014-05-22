@@ -82,14 +82,10 @@ class qtThread(QtGui.QMainWindow):
     	qr.moveCenter(cp)
     	self.move(qr.topLeft())
 
-    #  to open the Open file dialog
+    #  to open the Open file dialog and print the filename selected
     def showDialog(self):
     	fname = QtGui.QFileDialog.getOpenFileName(self, 'Open File', '/home')
-    	f = open(fname, 'r')
-
-    	with f:
-    		data = f.read()
-    		self.textEdit.setText(data)
+    	print fname
 		
 {% endhighlight %}
 
