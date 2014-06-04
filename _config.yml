@@ -1,5 +1,5 @@
 name: 			Nishant Dania
 markdown: 		redcarpet
 pygments: 		true
-paginate:		3
+paginate:		1
 pages_list:		{'home':'/','about':'/about.html','projects':'/projects.html','archives':'/archives.html','contact':'/contact.html'}
