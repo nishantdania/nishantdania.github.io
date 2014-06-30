@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "GSOC 2014 - Week 6: Procedurally Generated a Pool and Adding an Underwater Shader"
+title:  "GSOC 2014 - Week 6: Procedurally Generating a Pool and Adding an Underwater Shader"
 date:   2014-06-30 10:00:00
 categories: gsoc update
 ---
