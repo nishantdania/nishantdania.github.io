@@ -20,7 +20,7 @@ To reduce the amount of vertices, I later used indexed vertices approach for cre
 I then applied some simple trigonometric equations to the vertex shader for animating the grid. This is what I would be doing later for creating the water plane. Also, the fragment shader changes the grid's color while its animating. Below is a screenshot of the animation.
 
 <div class="block"><div class="big clearfix"><img src="{{ site.url }}/assets/grid2.png">
-</div><span>The vertex shader in action.</span></div></div>
+</div><span>The vertex shader in action.</span></div>
 
 After having spent an entire week learning about shaders, I finally feel that shaders are a bit less intimidating than I had thought. Still there is a lot to learn before I can have even the simplest water rendered on my screen. 
 
